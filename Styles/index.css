@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body { /* sets the default styles for the entire page bc the body tag is what contains all your website info! */
+    background-color: black;
+    color: white; /* text color */
+    font-family: "Marker Felt";
+    font-size: 12px;
+/* try these other font size styles that change based on the screen width (vw)/height (vh): */
+/* [vw stands for viewport width, vh is viewport height, vmax says to scale the font size to the larger dimension] */
+/*    font-size: 1.5vw; */
+/*    font-size: 1.5vh; */
+/*    font-size: 1.5vmax; */
+}
+
+p {
+/*    you can manually assign this element's font size, font family, etc. - it overrides the body tag's styles    */
+    font-family: "Helvetica Neue";
+    text-align: center;
+    margin-top: 50px; /* gives some margin space on top of this text. try replacing "margin" with "padding" to understand their difference */
+    background-color: lightskyblue;
+    color: black;
+}
+
+/* flexbox time! */
+.flex-parent {
+    display: flex; /* THIS IS IMPORTANT this tells the flex-parent to act like a flexbox */
+}
+
+.flex-child {
+    width: 400px
+}
+
+.flex-child img {
+    width: 80px;
+}
