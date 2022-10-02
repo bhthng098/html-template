@@ -25,10 +25,13 @@ p {
 /* flexbox time! */
 .flex-parent {
     display: flex; /* THIS IS IMPORTANT this tells the flex-parent to act like a flexbox */
+    flex-wrap: wrap;
+    text-align: center; /* aligns all the stuff inside the children to center */
 }
 
 .flex-child {
-    width: 400px
+    width: 400px;
+    border: white 2px solid;
 }
 
 .flex-child img {
